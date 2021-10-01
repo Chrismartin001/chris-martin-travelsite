@@ -1,0 +1,74 @@
+@use "./partials/global";
+@import "./partials/variables.scss";
+
+.slogen {
+  background-color: #f8e6dd56;
+  display: flex;
+  height: 30rem;
+  margin-top: 3.4rem;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  &__title {
+    color: $wordmarkcolor;
+    font-size: 2.5rem;
+    position: relative;
+    left: 7rem;
+    bottom: 4rem;
+  }
+  &__logo {
+    width: 26rem;
+    height: 23rem;
+    position: relative;
+    left: 31rem;
+    top: 1rem;
+  }
+  &__text {
+    position: relative;
+    bottom: 12rem;
+    right: 50rem;
+    top: 6rem;
+  }
+}
+
+.recommendations {
+  display: flex;
+  margin: 50vh;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    color: $wordmarkcolor;
+    font-size: 1.4rem;
+    padding-left: 8rem;
+  }
+
+  &__hawaii {
+    background-image: url(../assets/images/hawaii.jpg);
+    width: 20rem;
+    height: 25rem;
+    position: absolute;
+    bottom: 1rem;
+    left: -4rem;
+  }
+
+  &__iceland {
+    background-image: url(../assets/images/iceland.jpg);
+    width: 20rem;
+    height: 25rem;
+    padding-left: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 15rem;
+  }
+
+  &__greece {
+    background-image: url(../assets/images/greece.jpg);
+    width: 20rem;
+    height: 25rem;
+    padding-left: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 39rem;
+  }
+}

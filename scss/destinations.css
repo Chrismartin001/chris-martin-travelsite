@@ -1,2 +1,97 @@
+* {
+  margin: 0rem;
+  padding: 0r box-sizing border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-/*# sourceMappingURL=destinations.css.map *//*# sourceMappingURL=destinations.css.map */
+.navbar {
+  display: flex;
+  background-color: #ffffff;
+  color: #335576;
+  width: 100vw;
+  height: 4rem;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  top: 0rem;
+}
+.navbar__title {
+  padding-left: 8rem;
+  display: flex;
+  align-items: center;
+}
+.navbar__links {
+  font-size: 1.2rem;
+  padding-top: 1.1rem;
+  position: relative;
+  right: 15rem;
+}
+.navbar__links--icepadding {
+  padding-right: 1rem;
+}
+.navbar__links--hawpadding {
+  padding: 0rem 1rem;
+}
+.navbar__links--home {
+  border-bottom: 0.25rem solid #db7a4e;
+  padding-bottom: 0.5rem;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  background-color: #fefaf5;
+  padding: 2rem 10rem;
+  color: #335576;
+  min-width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0rem;
+}
+.footer__contact {
+  font-size: 1.4rem;
+  padding: 3rem 6rem;
+}
+.footer__contact--color {
+  color: #db7a4e;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+.footer__contact--email {
+  font-size: 1rem;
+}
+.footer__time {
+  font-size: 1.4rem;
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer__time--days {
+  color: #db7a4e;
+  font-size: 1rem;
+  display: flex;
+  padding: 1.699rem 1rem 1rem 0rem;
+}
+.footer__time--hours {
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+  font-size: 1rem;
+  display: flex;
+}
+.footer__social {
+  font-size: 1.4rem;
+  padding: 3rem 6rem;
+  position: relative;
+}
+.footer__social--size {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 3rem 3rem 1rem 0rem;
+}/*# sourceMappingURL=destinations.css.map */
