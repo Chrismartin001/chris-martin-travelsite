@@ -47,7 +47,7 @@ a:active {
 
 .footer {
   background-color: #fefaf5;
-  padding: 2rem 10rem;
+  padding: 2rem 20rem;
   color: #335576;
   min-width: 100%;
   display: flex;
@@ -106,7 +106,6 @@ li {
 .destination {
   display: flex;
   text-align: center;
-  align-items: center;
   position: relative;
 }
 .destination__background--hawaii {

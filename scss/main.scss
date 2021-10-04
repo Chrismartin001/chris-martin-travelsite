@@ -1,6 +1,6 @@
 @use "./partials/global";
-@import "./partials/variables.scss";
-@import "./partials/mixins.scss";
+@use "./partials/variables.scss" as *;
+@use "./partials/mixins.scss" as *;
 
 .slogen {
   background-color: #f8e6dd56;
@@ -34,35 +34,39 @@
 
 .recommendations {
   display: flex;
-  margin-top: 65vh;
+  margin-top: 10vh;
   text-align: center;
-  margin-bottom: 20rem;
-  position: relative;
+  margin-bottom: 23rem;
 
   &__title {
     color: $wordmarkcolor;
     font-size: 1.4rem;
-    position: absolute;
-    bottom: 31rem;
-    left: 22rem;
+    vertical-align: top;
+    position: relative;
+    top: -3rem;
+    left: 31rem;
   }
 
-  &__hawaii {
-    background-image: url(../assets/images/hawaii.jpg);
-    @include card-background;
-    left: 32rem;
-  }
+  &__locations {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: auto;
+    &--hawaii {
+      background-image: url(../assets/images/hawaii.jpg);
+      @include card-background;
+      margin-right: 3rem;
+    }
 
-  &__iceland {
-    background-image: url(../assets/images/iceland.jpg);
-    @include card-background;
+    &--iceland {
+      background-image: url(../assets/images/iceland.jpg);
+      @include card-background;
+    }
 
-    right: 50rem;
-  }
-
-  &__greece {
-    background-image: url(../assets/images/greece.jpg);
-    @include card-background;
-    right: 30rem;
+    &--greece {
+      background-image: url(../assets/images/greece.jpg);
+      @include card-background;
+      margin-left: 3rem;
+    }
   }
 }
