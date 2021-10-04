@@ -1,5 +1,6 @@
 @use "./partials/global";
 @import "./partials/variables.scss";
+@import "./partials/mixins.scss";
 
 .slogen {
   background-color: #f8e6dd56;
@@ -20,7 +21,7 @@
     width: 26rem;
     height: 23rem;
     position: relative;
-    left: 31rem;
+    left: 42rem;
     top: 1rem;
   }
   &__text {
@@ -33,42 +34,35 @@
 
 .recommendations {
   display: flex;
-  margin: 50vh;
+  margin-top: 65vh;
   text-align: center;
+  margin-bottom: 20rem;
   position: relative;
 
   &__title {
     color: $wordmarkcolor;
     font-size: 1.4rem;
-    padding-left: 8rem;
+    position: absolute;
+    bottom: 31rem;
+    left: 22rem;
   }
 
   &__hawaii {
     background-image: url(../assets/images/hawaii.jpg);
-    width: 20rem;
-    height: 25rem;
-    position: absolute;
-    bottom: 1rem;
-    left: -4rem;
+    @include card-background;
+    left: 32rem;
   }
 
   &__iceland {
     background-image: url(../assets/images/iceland.jpg);
-    width: 20rem;
-    height: 25rem;
-    padding-left: 1rem;
-    position: absolute;
-    bottom: 1rem;
-    right: 15rem;
+    @include card-background;
+
+    right: 50rem;
   }
 
   &__greece {
     background-image: url(../assets/images/greece.jpg);
-    width: 20rem;
-    height: 25rem;
-    padding-left: 1rem;
-    position: absolute;
-    bottom: 1rem;
-    left: 39rem;
+    @include card-background;
+    right: 30rem;
   }
 }

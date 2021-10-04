@@ -72,14 +72,17 @@ a:active {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: space-between;
 }
 .footer__time--days {
   color: #db7a4e;
   font-size: 1rem;
   display: flex;
   padding: 1.699rem 1rem 1rem 0rem;
+  justify-content: space-between;
 }
 .footer__time--hours {
+  justify-content: space-between;
   -webkit-text-decoration-color: none;
           text-decoration-color: none;
   font-size: 1rem;
@@ -116,7 +119,7 @@ a:active {
   width: 26rem;
   height: 23rem;
   position: relative;
-  left: 31rem;
+  left: 42rem;
   top: 1rem;
 }
 .slogen__text {
@@ -128,38 +131,51 @@ a:active {
 
 .recommendations {
   display: flex;
-  margin: 50vh;
+  margin-top: 65vh;
   text-align: center;
+  margin-bottom: 20rem;
   position: relative;
 }
 .recommendations__title {
   color: #335576;
   font-size: 1.4rem;
-  padding-left: 8rem;
+  position: absolute;
+  bottom: 31rem;
+  left: 22rem;
 }
 .recommendations__hawaii {
   background-image: url(../assets/images/hawaii.jpg);
-  width: 20rem;
-  height: 25rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 16rem;
+  height: 24rem;
   position: absolute;
-  bottom: 1rem;
-  left: -4rem;
+  bottom: 5rem;
+  left: 32rem;
 }
 .recommendations__iceland {
   background-image: url(../assets/images/iceland.jpg);
-  width: 20rem;
-  height: 25rem;
-  padding-left: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 16rem;
+  height: 24rem;
   position: absolute;
-  bottom: 1rem;
-  right: 15rem;
+  bottom: 5rem;
+  right: 50rem;
 }
 .recommendations__greece {
   background-image: url(../assets/images/greece.jpg);
-  width: 20rem;
-  height: 25rem;
-  padding-left: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 16rem;
+  height: 24rem;
   position: absolute;
-  bottom: 1rem;
-  left: 39rem;
+  bottom: 5rem;
+  right: 30rem;
 }/*# sourceMappingURL=main.css.map */

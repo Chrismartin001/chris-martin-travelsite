@@ -1,2 +1,96 @@
 @use "./partials/global";
 @import "./partials/variables.scss";
+
+li {
+  list-style-type: none;
+}
+
+.destination {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative;
+
+  &__background--hawaii {
+    background-image: url(../assets/images/hawaii.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &__background--iceland {
+    background-image: url(../assets/images/iceland.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &__background--greece {
+    background-image: url(../assets/images/greece.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &__title {
+    position: absolute;
+    left: 10rem;
+    top: 8rem;
+    color: white;
+    font-size: 4.5rem;
+  }
+
+  &__friday {
+    background-color: white;
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    top: 14rem;
+    left: 36rem;
+
+    &--itinerary {
+      position: relative;
+      background-color: #fefaf5;
+      font-size: 1.3rem;
+      padding: 2rem;
+      line-height: 4rem;
+    }
+  }
+
+  &__saturday {
+    background-color: white;
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    top: 14rem;
+    left: 55rem;
+
+    &--itinerary {
+      position: relative;
+      background-color: #fefaf5;
+      font-size: 1.3rem;
+      padding: 2rem;
+      line-height: 4rem;
+    }
+  }
+
+  &__sunday {
+    background-color: white;
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    top: 14rem;
+    right: 30rem;
+
+    &--itinerary {
+      position: relative;
+      background-color: #fefaf5;
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      margin: 0rem 1rem 1rem -1.5rem;
+    }
+  }
+}

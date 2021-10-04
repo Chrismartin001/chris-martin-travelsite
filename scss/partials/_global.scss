@@ -85,8 +85,10 @@ a:active {
       font-size: 1rem;
       display: flex;
       padding: 1.699rem 1rem 1rem 0rem;
+      justify-content: space-between;
     }
     &--hours {
+      justify-content: space-between;
       text-decoration-color: none;
       font-size: 1rem;
       display: flex;
