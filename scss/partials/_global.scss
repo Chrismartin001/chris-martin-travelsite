@@ -52,10 +52,7 @@ a:active {
   background-color: #fefaf5;
   padding: 2rem 20rem;
   color: $wordmarkcolor;
-  min-width: 100%;
   display: flex;
-  position: fixed;
-  bottom: 0rem;
 
   &__contact {
     font-size: 1.4rem;
@@ -77,8 +74,6 @@ a:active {
     padding: 3rem 6rem;
     display: flex;
     flex-direction: column;
-    position: relative;
-    justify-content: space-between;
 
     &--days {
       color: $underline;
@@ -97,8 +92,8 @@ a:active {
 
   &__social {
     font-size: 1.4rem;
-    padding: 3rem 6rem;
-    position: relative;
+    padding: 3rem 0rem;
+    display: flex;
 
     &--size {
       width: 1.5rem;

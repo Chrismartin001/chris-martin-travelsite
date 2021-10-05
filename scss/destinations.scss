@@ -9,8 +9,7 @@ li {
 .destination {
   display: flex;
   text-align: center;
-  position: relative;
-
+  margin-top: 5vh;
   &__background--hawaii {
     background-image: url(../assets/images/hawaii.jpg);
     @include destinationbackground;
@@ -27,61 +26,49 @@ li {
   }
 
   &__title {
-    position: absolute;
-    left: 10rem;
-    top: 8rem;
     color: white;
     font-size: 4.5rem;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 5rem;
   }
 
-  &__friday {
-    background-color: white;
-    width: 16rem;
-    height: 24rem;
-    position: absolute;
-    top: 14rem;
-    left: 36rem;
+  &__block {
+    display: flex;
+    justify-content: center;
 
+    &--friday {
+      background-color: white;
+      width: 16rem;
+      height: 24rem;
+      margin-right: 3rem;
+      margin-top: 5rem;
+    }
+
+    &--saturday {
+      background-color: white;
+      width: 16rem;
+      height: 24rem;
+      margin-top: 5rem;
+    }
+
+    &--sunday {
+      background-color: white;
+      width: 16rem;
+      height: 24rem;
+      margin-left: 3rem;
+      margin-top: 5rem;
+    }
     &--itinerary {
       position: relative;
       background-color: #fefaf5;
       font-size: 1.3rem;
       padding: 2rem;
-      line-height: 4rem;
+      line-height: 1rem;
     }
-  }
 
-  &__saturday {
-    background-color: white;
-    width: 16rem;
-    height: 24rem;
-    position: absolute;
-    top: 14rem;
-    left: 55rem;
-
-    &--itinerary {
-      position: relative;
-      background-color: #fefaf5;
-      font-size: 1.3rem;
-      padding: 2rem;
-      line-height: 4rem;
-    }
-  }
-
-  &__sunday {
-    background-color: white;
-    width: 16rem;
-    height: 24rem;
-    position: absolute;
-    top: 14rem;
-    right: 30rem;
-
-    &--itinerary {
-      position: relative;
-      background-color: #fefaf5;
-      font-size: 1.4rem;
-      padding: 0.5rem 1rem 0.5rem 1rem;
-      margin: 0rem 1rem 1rem -1.5rem;
+    &--title {
+      border-bottom: 2px solid black;
     }
   }
 }

@@ -49,10 +49,7 @@ a:active {
   background-color: #fefaf5;
   padding: 2rem 20rem;
   color: #335576;
-  min-width: 100%;
   display: flex;
-  position: fixed;
-  bottom: 0rem;
 }
 .footer__contact {
   font-size: 1.4rem;
@@ -71,8 +68,6 @@ a:active {
   padding: 3rem 6rem;
   display: flex;
   flex-direction: column;
-  position: relative;
-  justify-content: space-between;
 }
 .footer__time--days {
   color: #db7a4e;
@@ -90,8 +85,8 @@ a:active {
 }
 .footer__social {
   font-size: 1.4rem;
-  padding: 3rem 6rem;
-  position: relative;
+  padding: 3rem 0rem;
+  display: flex;
 }
 .footer__social--size {
   width: 1.5rem;
@@ -133,7 +128,7 @@ a:active {
   display: flex;
   margin-top: 10vh;
   text-align: center;
-  margin-bottom: 23rem;
+  margin-bottom: 5rem;
 }
 .recommendations__title {
   color: #335576;
@@ -151,8 +146,9 @@ a:active {
 }
 .recommendations__locations--hawaii {
   background-image: url(../assets/images/hawaii.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: 0.3125rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 16rem;
@@ -161,8 +157,9 @@ a:active {
 }
 .recommendations__locations--iceland {
   background-image: url(../assets/images/iceland.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: 0.3125rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 16rem;
@@ -170,11 +167,19 @@ a:active {
 }
 .recommendations__locations--greece {
   background-image: url(../assets/images/greece.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: 0.3125rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 16rem;
   height: 24rem;
   margin-left: 3rem;
+}
+.recommendations__locations--title {
+  color: white;
+  position: absolute;
+  bottom: -3rem;
+  height: 0rem;
+  width: 25rem;
 }/*# sourceMappingURL=main.css.map */

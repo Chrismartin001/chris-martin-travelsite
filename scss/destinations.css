@@ -49,10 +49,7 @@ a:active {
   background-color: #fefaf5;
   padding: 2rem 20rem;
   color: #335576;
-  min-width: 100%;
   display: flex;
-  position: fixed;
-  bottom: 0rem;
 }
 .footer__contact {
   font-size: 1.4rem;
@@ -71,8 +68,6 @@ a:active {
   padding: 3rem 6rem;
   display: flex;
   flex-direction: column;
-  position: relative;
-  justify-content: space-between;
 }
 .footer__time--days {
   color: #db7a4e;
@@ -90,8 +85,8 @@ a:active {
 }
 .footer__social {
   font-size: 1.4rem;
-  padding: 3rem 6rem;
-  position: relative;
+  padding: 3rem 0rem;
+  display: flex;
 }
 .footer__social--size {
   width: 1.5rem;
@@ -106,7 +101,7 @@ li {
 .destination {
   display: flex;
   text-align: center;
-  position: relative;
+  margin-top: 5vh;
 }
 .destination__background--hawaii {
   background-image: url(../assets/images/hawaii.jpg);
@@ -130,54 +125,43 @@ li {
   width: 100vw;
 }
 .destination__title {
-  position: absolute;
-  left: 10rem;
-  top: 8rem;
   color: white;
   font-size: 4.5rem;
+  text-align: left;
+  margin-left: 10rem;
+  margin-top: 5rem;
 }
-.destination__friday {
+.destination__block {
+  display: flex;
+  justify-content: center;
+}
+.destination__block--friday {
   background-color: white;
   width: 16rem;
   height: 24rem;
-  position: absolute;
-  top: 14rem;
-  left: 36rem;
+  margin-right: 3rem;
+  margin-top: 5rem;
 }
-.destination__friday--itinerary {
+.destination__block--saturday {
+  background-color: white;
+  width: 16rem;
+  height: 24rem;
+  margin-top: 5rem;
+}
+.destination__block--sunday {
+  background-color: white;
+  width: 16rem;
+  height: 24rem;
+  margin-left: 3rem;
+  margin-top: 5rem;
+}
+.destination__block--itinerary {
   position: relative;
   background-color: #fefaf5;
   font-size: 1.3rem;
   padding: 2rem;
-  line-height: 4rem;
+  line-height: 1rem;
 }
-.destination__saturday {
-  background-color: white;
-  width: 16rem;
-  height: 24rem;
-  position: absolute;
-  top: 14rem;
-  left: 55rem;
-}
-.destination__saturday--itinerary {
-  position: relative;
-  background-color: #fefaf5;
-  font-size: 1.3rem;
-  padding: 2rem;
-  line-height: 4rem;
-}
-.destination__sunday {
-  background-color: white;
-  width: 16rem;
-  height: 24rem;
-  position: absolute;
-  top: 14rem;
-  right: 30rem;
-}
-.destination__sunday--itinerary {
-  position: relative;
-  background-color: #fefaf5;
-  font-size: 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 0rem 1rem 1rem -1.5rem;
+.destination__block--title {
+  border-bottom: 2px solid black;
 }/*# sourceMappingURL=destinations.css.map */
