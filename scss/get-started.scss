@@ -1,0 +1,58 @@
+@use "./partials/global";
+@use "./partials/variables.scss" as *;
+@use "./partials/mixins.scss" as *;
+
+.recommendations {
+  display: flex;
+  margin-top: 10vh;
+  text-align: center;
+  margin-bottom: 5rem;
+
+  &__title {
+    color: $wordmarkcolor;
+    font-size: 1.4rem;
+    vertical-align: top;
+    position: relative;
+    top: 0rem;
+    left: 20rem;
+  }
+
+  &__locations {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: auto;
+    &--hawaii {
+      background-image: url(../assets/images/hawaii.jpg);
+      @include card-background;
+      margin-right: 3rem;
+    }
+
+    &--iceland {
+      background-image: url(../assets/images/iceland.jpg);
+      @include card-background;
+    }
+
+    &--greece {
+      background-image: url(../assets/images/greece.jpg);
+      @include card-background;
+      margin-left: 3rem;
+    }
+    &--title {
+      color: black;
+      position: absolute;
+      bottom: 0rem;
+      height: 31rem;
+      width: 25rem;
+    }
+  }
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  position: absolute;
+  top: 10rem;
+  left: 20rem;
+}
