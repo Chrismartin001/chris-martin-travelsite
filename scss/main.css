@@ -123,6 +123,18 @@ a:active {
   right: 50rem;
   top: 6rem;
 }
+.slogen__button {
+  color: white;
+  font-size: 1rem;
+  background-color: #db7a4e;
+  border-radius: 20px;
+  border: 1px solid #db7a4e;
+  width: 12rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 7rem;
+}
 
 .recommendations {
   display: flex;
